@@ -1,0 +1,174 @@
+/* section background */
+
+section.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85vh;
+  padding-top: 95px;
+  position: relative;
+}
+section.background .wave {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 15%;
+}
+section.background .container .row .title {
+  position: absolute;
+  bottom: 37%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section.background .container .row .title h1,
+section.background .container .row .title p.h4 {
+  color: #FFF;
+  position: relative;
+  z-index: 2;
+}
+section.background .container .row .title p.h4 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0%;
+  font-weight: 600;
+}
+section.background .container .row .title .titleInt {
+  width: 58%;
+  margin-bottom: 3%;
+  position: relative;
+  padding: 1% 2%;
+}
+section.background .container .row .title .titleInt .titleBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #CCC8C2;
+  mix-blend-mode: multiply;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  z-index: 1;
+}
+section.background .container .row .title .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+section.background .container .row .title .buttons a.btn-white {
+  padding: 1%;
+  width: 19%;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  left: 3%;
+}
+section.background .container .row .title .buttons a.btn-orange {
+  width: 20%;
+  padding: 1%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  right: 3%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/* end section background */
+
+/* section history */
+
+section.history {
+  padding: 3.5% 0%;
+}
+section.history .container .row .title {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start; 
+  padding: 0px 15px 25px 15px;
+  width: 100%;
+}
+section.history .container .row .col-sm-6.col-md-6.col-lg-6 p.txt {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* end section history */
+
+
+
+/* section mapa */
+section.mapa {
+  padding: 5% 0%;
+}
+/* section mapa */
+
+@media only screen and (min-width:320px) and (max-width: 768px) {
+
+  /* section background */
+  section.background .container .row .title .titleInt {
+    width: 95%;
+  }
+  section.background {
+    height: 70vh;
+  }
+  section.background .container .row .title {
+    position: static;
+    margin-top: 5%;
+  }
+  section.background .container .row .title h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  section.background .container .row .title p.h4 {
+    width: 100%;
+    font-size: 18px;
+  }
+  section.background .container .row .title .buttons {
+    flex-direction: column;
+  }
+  section.background .container .row .title .buttons a.btn-orange,
+  section.background .container .row .title .buttons a.btn-white {
+    width: 75%;
+    right: 0;
+    left: 0;
+  }
+  section.background .container .row .title .buttons a.btn-orange {
+    margin-bottom: 3%;
+  }
+  section.background .wave {
+    height: 6%;
+  }
+
+  /* section background */
+
+  /* section history */
+
+  section.history {
+    padding: 9.5% 0%;
+  }
+  section.history .container .row .title p.h1 {
+    font-size: 32px;
+  }
+  section.history .container .row .title p.h5 {
+    font-size: 16px;
+  }
+  section.history .container .row .title p.h6 {
+    font-size: 13px;
+  }
+  section.history .container .row .col-sm-6.col-md-6.col-lg-6 p.txt {
+    font-size: 14px;
+  }
+
+  /* section history */
+
+}

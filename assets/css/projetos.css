@@ -1,0 +1,303 @@
+.block {
+  display: block !important;
+}
+.fotos,
+.none {
+  display: none !important;
+}
+a {
+  cursor: pointer;
+}
+/* section background */
+
+section.background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+}
+section.background .container .row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 21%;
+}
+section.background .container .row .title {
+  opacity: 0;
+  position: absolute;
+}
+h1 {
+  font-size: 60px;
+}
+
+section.photos .container .insertFoto .one a {
+  height: 100%;
+  display: flex;
+}
+.wave {
+  width: 100%;
+  bottom: 0%;
+  position: absolute;
+  height: 100px;
+}
+
+/* end section background */
+
+/* section photos */
+
+section.photos {
+  padding: 5% 0%;
+}
+section.photos .container .row .col-sm-4.col-md-4.col-lg-4 {
+  height: 200px;
+  max-width: 30.75%;
+  cursor: pointer;
+  margin-bottom: 2%;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+section.photos .container .row .col-sm-4.col-md-4.col-lg-4,
+section.photos .container .row .col-sm-4.col-md-4.col-lg-4 img.photoHome {
+  transition: all .35s ease-in;
+  -webkit-transition: all .35s ease-in;
+  -moz-transition: all .35s ease-in;
+  -ms-transition: all .35s ease-in;
+  -o-transition: all .35s ease-in;
+}
+section.photos .container .row .col-sm-4.col-md-4.col-lg-4 img.photoHome {
+  object-fit: cover;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  height: 100%;
+}
+section.photos .container .row .col-sm-4.col-md-4.col-lg-4 img.photoHome:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+section.photos .container .bgbox {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+section.photos .container .divbox {
+  position: fixed;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  width: 80vw;
+  height: 70vh;
+  background: transparent;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section.photos .container .bgbox, 
+section.photos .container .divbox {
+  display: none;
+}
+section.photos .container .divbox svg {
+  position: absolute;
+  top: 3%;
+  right: 1.5%;
+  cursor: pointer;
+  fill: #000;
+}
+section.photos .container .divbox a#button,
+section.photos .container .divbox a#buttonPrev {
+  position: absolute;
+  top: 0%;
+}
+section.photos .container .divbox a#button {
+  right: -8%;
+}
+section.photos .container .divbox a#button,
+section.photos .container .divbox a#buttonPrev {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  opacity: .5;
+  width: 7%;
+}
+section.photos .container .divbox a#button svg,
+section.photos .container .divbox a#buttonPrev svg {
+  width: 70px;
+  height: 70px;
+}
+section.photos .container .divbox a#buttonPrev {
+  left: -8%;
+}
+section.photos .container .divbox a svg {
+  position: static;
+}
+section.photos .container .divbox svg#svg {
+  fill: #FFF;
+}
+section.photos .container .divbox img {
+  height: inherit;
+  object-fit: contain;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section.photos .container .filter {
+  margin-bottom: 20px;
+}
+#arrowEsp {
+  position: relative;
+  right: 4%;
+}
+section.photos .container .filter .ls-select.especialidade {
+  width: 50%;
+  box-shadow: 1px 1px 14px 0px #fb7b22;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  position: relative;
+}
+section.photos .container .filter .ls-select.especialidade .control {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section.photos .container .filter .ls-select.especialidade p.txt {
+  margin-bottom:0;
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  font-size: 30px;
+  padding: 2% 5%;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fb7b22;
+}
+section.photos .container .filter .ls-select.especialidade .down {
+  width: 100%;
+  background: #FFF;
+  box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+  border-radius: 6px;
+  top: 100%;
+  left: 0;
+  position: absolute;
+  z-index: 10 !important;
+}
+section.photos .container .filter .ls-select.especialidade .down label {
+  margin-bottom: 0;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid #DDD;  
+  transition: all .25s ease-in;
+  cursor: pointer;
+}
+section.photos .container .filter .ls-select.especialidade .down label:hover {
+  background: #fb7b22;
+  color: #FFF;
+}
+section.photos .container .filter .ls-select.especialidade .down label p {
+  margin-bottom: 0;
+  font-weight: 500;
+  width: 100%;
+  padding: 2% 3%;
+  font-size: 20px;
+}
+section.photos .container .filter .ls-select.especialidade .down label input {
+  opacity: 0;
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width:1023px) {
+
+  h1 {
+    font-size: 50px;
+  }
+  section.photos .container .filter .ls-select.especialidade p.txt {
+    font-size: 24px !important;
+  }
+  section.photos .container .filter .ls-select.especialidade {
+    width: 90%;
+  }
+  section.photos .container .filter {
+    justify-content: center !important;
+  }
+  section.background .container .row {
+    padding-top: 24vh;
+  }
+  section.photos .container .divbox {
+    top: 56%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  
+  h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  /* section background */
+  
+  section.background .container .row {
+    width: auto;
+    padding-top: 21vh;
+  }
+  .wave {
+    height: 28px;
+  }
+
+  /* end section background */
+
+  /* section photos */
+  section.photos .container .divbox {
+    top: 56%;
+  }
+  section.photos {
+    padding-top: 10%;
+  }
+  section.photos .container .filter .ls-select.especialidade p.txt {
+    font-size: 20px;
+  }
+  section.photos .container .filter .ls-select.especialidade {
+    width: 95%;
+    padding: 3% 0%;
+  }
+  section.photos .container .row {
+    flex-direction: column;
+    align-items: center;
+  }
+  section.photos .container .row .col-sm-4.col-md-4.col-lg-4 {
+    max-width: 100%;
+  }
+
+  /* section photos */
+
+}
+

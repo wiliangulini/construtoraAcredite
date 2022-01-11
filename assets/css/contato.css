@@ -1,0 +1,281 @@
+.laranja {
+  color: #fb7b22 !important;
+}
+section.background {
+  height: 60vh;
+  position:relative;
+}
+.relative {
+  position: relative;
+}
+.wave {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+}
+.logoWhite {
+  width: 7%;
+  position: absolute;
+  left: 14%;
+  bottom: -2%;
+  z-index: 1;
+}
+section.background .relative {
+  width: 50%;
+  height: 115px;
+  left: 22%;
+  top: 90px;
+}
+section.background .relative .backWhite::before {
+  content: "";
+  background-color: #FFF;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  left: -11px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+section.background .relative h2 {
+  color: #000;
+  position: relative;
+  text-align: center;
+  top: 15px;
+}
+section.background .relative .backWhite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: .7;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+section.background .container .row {
+  justify-content: center;
+  align-items: center;
+  padding-top: 24vh;
+}
+section.background .container .row .title h1 {
+  font-size: 60px;
+  margin-bottom: 0;
+  opacity: 0;
+  position: absolute;
+}
+section.background .container .row .title h1.contato {
+  font-family: "sans-serif" !important;
+  font-size: 50px;
+}
+section.form {
+  padding: 3% 0%;
+}
+section.form .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+section.form .container .row {
+  width: 100%;
+}
+section.form .container .title {
+  width: 60%;
+}
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form textarea {
+  height: 200px;
+  padding-top: 1%;
+}
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input {
+  height: 45px;
+}
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input[type='submit'] {
+  width: 45%;
+  font-size: 23px;
+  color: #FFF;
+  background-color: #fb7b22;
+  border: 1px solid #fb7b22;
+  font-weight: 600;
+  transition: all .35s ease-in;
+  -webkit-transition: all .35s ease-in;
+  -moz-transition: all .35s ease-in;
+  -ms-transition: all .35s ease-in;
+  -o-transition: all .35s ease-in;
+  cursor: pointer;
+}
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input[type='submit']:hover {
+  background-color: #FFF;
+  color: #fb7b22;
+  font-size: 25px;
+}
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form textarea,
+section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input {
+  width: 75%;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid #DDD;
+  padding-left: 2%;
+  margin-bottom: 2%;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+section.form .container .title .titleInt p.h6 {
+  margin: 2% 0% 3%;
+  font-size: 22px;
+  width: 80%;
+}
+section.form .container .title .titleInt .control,
+section.form .container .title .titleInt .control a {
+  color: #575757;
+  font-size: 18px;
+}
+section.form .container .title .titleInt .control.d-flex.whats {
+  margin-bottom: 5%;
+}
+section.form .container .title .titleInt .control.d-flex.whats p {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+section.form .container .title .titleInt .control.d-flex.whats a {
+  color: #38b553;
+  font-weight: 600;
+}
+section.form .container .title .titleInt .control.d-flex.whats a img {
+  width: 24px;
+  position: relative;
+  left: 8%;
+}
+section.form .container .title .titleInt .control a {
+  margin-left: 1.5%;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+
+  section.background .container .row .title h1.contato {
+    font-size: 35px;
+    text-align: center;
+  }
+  section.form .container .title,
+  section.form .container .title .titleInt p.h6,
+  section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form textarea, section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input,
+  section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input[type='submit'] {
+    width: 100%;
+  }
+  section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 form input[type='submit'] {
+    margin-top: 4%;
+  }
+  section.form .container .title .h2 {
+    font-size: 27px;
+  } 
+  section.form .container .title .titleInt p.h6 {
+    font-size: 18px;
+  }
+  section.form .container .title .titleInt .control {
+    flex-direction: column;
+    margin: 5% 0%;
+  }
+  section.form .container .title .titleInt .control p {
+    margin-bottom: 5px;
+  }
+  section.form .container .title .titleInt .control a {
+    margin-left: 0;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats {
+    align-items: flex-start;
+    margin-bottom: 10%;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats a {
+    margin-left: 6px;
+  }
+  section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 {
+    padding: 0;
+  }
+  section.background .relative {
+    width: 78%;
+    left: 21%;
+    top: -15px;
+  }
+  section.background .relative h2 {
+    font-size: 20px;
+    top: 10px;
+  }
+  .wave {
+    height: 28px;
+  }
+  section.background .relative .backWhite::before {
+    top: 61%;
+  }
+  .logoWhite {
+    width: 21%;
+    left: 1%;
+    bottom: 6%;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:374px) {
+  section.form .container .title .h2 {
+    font-size: 23px;
+  }
+  section.form .container .title .titleInt p.h6 {
+    font-size: 16px;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats a {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+  section.background .relative {
+    width: 82%;
+    left: 16%;
+  }
+  section.background .relative h2 {
+    font-size: 24px;
+    top: 27px;
+  }
+  .logoWhite {
+    width: 13%;
+    left: 1%;
+    bottom: 1%;
+  }
+  .btn-whats {
+    width: 30%;
+  }
+  section.form .container .row .col-sm-10.col-md-10.col-lg-10.col-xl-10 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats {
+    margin-bottom: 6%;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats a {
+    width: 35%;
+    margin-top: 0;
+    margin-left: 3%;
+  }
+  section.form .container .title .titleInt .control.d-flex.whats {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1500px) {
+  section.background .relative {
+    width: 65%;
+  }
+}
